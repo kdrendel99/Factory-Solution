@@ -33,27 +33,18 @@
 
 _Collect user input in a web-based application. This application was build to practice using C# ASP.NET Core using MVC design pattern, and Entity Framework Core._
 
-##Setup Database
 
-Run the following commands in MySQL to setup this project Database
-  ```
-  CREATE SCHEMA `karlson_drendel` ;
-  CREATE TABLE `karlson_drendel`.`stylists` (
-    `StylistId` INT NOT NULL AUTO_INCREMENT,
-    `name` VARCHAR(45) NULL,
-    `details` VARCHAR(255) NULL,
-    PRIMARY KEY (`StylistId`));
+## Setup/Installation Requirements <a id="setup"></a>
 
-  CREATE TABLE `karlson_drendel`.`clients` (
-    `ClientId` INT NOT NULL AUTO_INCREMENT,
-    `name` VARCHAR(45) NULL,
-    `StylistId` INT NULL DEFAULT '0',
-    PRIMARY KEY (`ClientId`));
+* _Open terminal._
 
-  ```
-    
-    
-Create appsettings.json, and add this code into it:
+* _Install Microsoft .NET Version 5._
+
+* _Clone this project with the following git command `$ git clone https://github.com/kdrendel99/Factory-Solution.git`_
+
+* _Open project using your preferred code editor._
+
+*_Create appsettings.json in SillyStringz.Solution/Factory, and add this code into it:_
     ```
     {
         "ConnectionStrings": {
@@ -62,23 +53,10 @@ Create appsettings.json, and add this code into it:
     }
     ```
 
-
-
-## Setup/Installation Requirements <a id="setup"></a>
-
-* _Open terminal._
-
-* _Install Microsoft .NET Version 5._
-
-* _Clone this project with the following git command `$ git clone https://github.com/kdrendel99/Hair-Salon.git`_
-
-* _Open project using your preferred code editor._
-
-* _Navigate to HairSalon.Solution/HairSalon_
+* _Navigate to SillyStringz.Solution/Factory_
 
 _Enter 'dotnet restore' into terminal and press enter to restore dependencies._
 *_Setup Database (See above)_
-
 
 * _Enter 'dotnet run' into terminal, and run the project._
 
