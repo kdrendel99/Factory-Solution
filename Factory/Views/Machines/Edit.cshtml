@@ -1,0 +1,43 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Factory.Models.Machine
+
+<h2>Edit</h2>
+
+<h4>Edit this Machine: @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.MachineId)
+
+  @Html.LabelFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)
+
+  @Html.LabelFor(model => model.Details)
+  @Html.EditorFor(model => model.Details)
+
+  <input type="submit" value="Save" />
+}
+@if (@Model.JoinEntities.Count == 0)
+{
+  <p>This machine doesn't have any engineers!</p>
+}
+else
+{
+  <h4>This machine is licensed to the following engineers:</h4>
+  <ul>
+  @foreach (var join in Model.JoinEntities)
+    {
+      <li>@join.Engineer.Name</li>
+      @using (Html.BeginForm("DeleteEngineer", "Machines"))
+      {
+        @Html.Hidden("joinId", @join.EngineerMachineId)
+        @Html.Hidden("machineId", @Model.MachineId)
+        <input type="submit" value="Delete engineer from this machine" />
+      }
+    }
+  </ul>
+}
+<p>@Html.ActionLink("Back to list", "Index")</p>
