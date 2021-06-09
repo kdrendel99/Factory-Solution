@@ -66,7 +66,6 @@ public ActionResult AddMachine(int id)
     [HttpPost]
     public ActionResult AddMachine(Engineer engineer, int MachineId)
     {
-
       if (MachineId != 0)
       {
         _db.EngineerMachine.Add(new EngineerMachine() { MachineId = MachineId, EngineerId = engineer.EngineerId });
