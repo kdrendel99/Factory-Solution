@@ -44,7 +44,7 @@ _Collect user input in a web-based application. This application was build to pr
 
 * _Open project using your preferred code editor._
 
-*_Create appsettings.json in SillyStringz.Solution/Factory, and add this code into it:_
+* _Create appsettings.json in SillyStringz.Solution/Factory, and add this code into it:_
 
     ```
     {
