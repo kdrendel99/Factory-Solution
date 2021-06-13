@@ -21,12 +21,12 @@
 
 * _C# 8.0_
 * _.NET 5 Framework_
-*_ASP.NET Core_
-*_MVC 2.2_
-*_MySQL + MySQL Workbench -v 8.0.15_
-*_RESTful Routing_
-*_CRUD Functionality_
-*_Git_
+* _ASP.NET Core_
+* _MVC 2.2_
+* _MySQL + MySQL Workbench -v 8.0.15_
+* _RESTful Routing_
+* _CRUD Functionality_
+* _Git_
 * _Microsoft Visual Studio Code_
 
 ## Description <a id="description"></a>
