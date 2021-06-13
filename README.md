@@ -56,9 +56,9 @@ _Collect user input in a web-based application. This application was build to pr
 
 * _Navigate to SillyStringz.Solution/Factory_
 
-_Enter 'dotnet restore' into terminal and press enter to restore dependencies._
+* _Enter 'dotnet restore' into terminal and press enter to restore dependencies._
 
-*_Enter 'dotnet ef database update' into the terminal to update database._
+* _Enter 'dotnet ef database update' into the terminal to update database._
 
 * _Enter 'dotnet run' into terminal, and run the project._
 
